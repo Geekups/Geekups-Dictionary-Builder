@@ -1,6 +1,9 @@
 import sys
 sys.path.append('WORDS\main_Services')
-
+# from WORDS.PGCW import pgcw
+# from WORDS.PGCWRW import pgcwrw
+# from WORDS.PGPEW import pgpew
+# from WORDS.PGPW import pgpw
 import argparse
 
 if __name__ == "__main__":
