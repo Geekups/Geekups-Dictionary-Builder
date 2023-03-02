@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser.add_argument("pgpew", help="generating password file using permutations, all possible orderings, no repeated elements")
     parser.add_argument("pgpw", help="""
     this is a little different look its function, and pass -repeat instead of -range arg when use it
-    product(p, q, … [repeat=1]) => cartesian product, equivalent to a nested for-loop
+    product(p, q, …. [repeat=1]) => cartesian product, equivalent to a nested for-loop
     => sample: product('ABCD', repeat=2) => result: AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD
     """)
     args = parser.parse_args()
