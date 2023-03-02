@@ -1,10 +1,12 @@
+import itertools as it
+
 def product_function(*,file_path, start_range, end_range, word_list):
     try:
         # open the pass-list file after the loops to avoide of repetitive action => reduce cpu usage
         with open(file_path, 'w') as file:
             for i in range(start_range, end_range + 1):
                 # get possible passwords by using itter.product function 
-                prob_pass_list = list(it.product(word_list, i))
+                prob_pass_list = list(it.product(word_list, repeat=i)) #You forgot to put repeat=i
                 # iterate over each pass-list built by 'product' function
                 for j in range(len(prob_pass_list)):
                     # building our string password by joining probable words in [j] index
@@ -12,4 +14,4 @@ def product_function(*,file_path, start_range, end_range, word_list):
                     # finally should write the password in specific file
                     file.write(f"{prob_pass_string} \n")
     except:
-        print("something get fucked! try again or try another service")
+        print("Something get fucked! Try again or try another service")

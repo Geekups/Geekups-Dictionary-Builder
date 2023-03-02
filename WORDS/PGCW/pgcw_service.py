@@ -32,4 +32,4 @@ def combinations_functions(*, file_path, start_range, end_range, word_list):
                     file.write('\n'.join(chunk) + '\n')
     except Exception as e:
         print(f"Error: {e}")
-        print("Something went wrong! Try again or try another service.")
+        print("Something get fucked! Try again or try another service.")

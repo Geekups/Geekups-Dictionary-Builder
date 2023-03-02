@@ -2,7 +2,7 @@ from time import sleep
 # Get the possible password words from the user
 def get_words_from_usr():
     try:
-        words = input("type your words separated with space:")
+        words = input("type your words(one chars or one numbers) separated with space:")
         word_list = words.split(' ')
         return word_list
     except:
