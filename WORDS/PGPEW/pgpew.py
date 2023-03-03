@@ -5,10 +5,13 @@
 import sys
 sys.path.append('WORDS\main_Services')
 
-import WORDS.main_Services.common_actions_service as cas
+import common_actions_service as cas
 import pgpew_service as pgpews
 
 def start_calculation():
     word_list = cas.get_words_from_usr()
     start, end = cas.get_pass_range_from_user()
     pgpews.permutations_function(file_path='WORDS\PGPEW\pgpew_pass_list.txt', word_list=word_list, start_range=start, end_range=end)
+
+if __name__ == "__main__" :
+    start_calculation()
