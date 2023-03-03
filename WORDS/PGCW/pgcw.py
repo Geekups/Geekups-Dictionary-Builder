@@ -17,3 +17,6 @@ def start_calculation():
     start, end = cas.get_pass_range_from_user()
     pgcwms.combinations_functions(file_path='WORDS\PGCW\pgcw_pass_list.txt',
     start_range=start, end_range=end, word_list=word_list)
+
+if __name__ == "__main__" :
+    start_calculation()
