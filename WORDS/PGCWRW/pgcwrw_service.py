@@ -1,4 +1,4 @@
-
+import itertools as it
 def combinations_with_replacement_function(*,file_path, start_range, end_range, word_list):
     try:
          # open the pass-list file after the loops to avoide of repetitive action => reduce cpu usage
@@ -13,4 +13,5 @@ def combinations_with_replacement_function(*,file_path, start_range, end_range, 
                     # finally should write the password in specific file
                     file.write(f"{prob_pass_string} \n")
     except:
-        print("something get fucked! try again or try another service")
+        print("Something get fucked! Try again or try another service") 
+

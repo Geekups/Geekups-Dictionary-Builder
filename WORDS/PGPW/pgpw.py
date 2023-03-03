@@ -11,4 +11,7 @@ import pgpw_service as pgpws
 def start_calculation():
     word_list = cas.get_words_from_usr()
     start, end = cas.get_pass_range_from_user()
-    pgpws.product_function()(file_path='WORDS\PGPW\pgpw_pass_list.txt', word_list=word_list, start_range=start, end_range=end)
+    pgpws.product_function(file_path='WORDS\PGPW\pgpw_pass_list.txt', word_list=word_list, start_range=start, end_range=end)
+
+if __name__ == "__main__" :
+    start_calculation()
