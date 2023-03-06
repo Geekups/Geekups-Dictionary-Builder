@@ -79,7 +79,7 @@ if __name__ == "__main__":
             ====                   ========================
            ======                  ========================
 
-           author: illegible, dayana, Mohammad Javad Tabari
+           authors: Mostafa-Kavand | Mohammad-Reza-Rokni | Bamdad Tabari [the Dayi]
     """)
 
     main()
