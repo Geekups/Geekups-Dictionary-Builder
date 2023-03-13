@@ -12,10 +12,29 @@ sys.path.append('WORDS\PGCWRW')
 
 import pgcwrw_service as pgcwrws
 
+import os
+
+
+
 def start_calculation():
     word_list = cas.get_words_from_usr()
     start, end = cas.get_pass_range_from_user()
-    pgcwrws.combinations_with_replacement_function(word_list=word_list, end_range=end, start_range=start, file_path="WORDS\pass_list.txt")
+    
+    default_path = "WORDS\pass_list.txt"
+
+    path = r"{}".format(input("please enter a path to save the result (default : WORDS\pass_list.txt ) :"))
+
+    # Use replace() method to remove the double quotes (When there are double quotes, the input is not recognized as a path)
+    new_path = path.replace('"', "")
+
+    # Checking the correctness of the entered path
+
+    if os.path.exists(new_path) == True :
+        file_path = new_path
+
+    else :
+        file_path = default_path
+    pgcwrws.combinations_with_replacement_function(word_list=word_list, end_range=end, start_range=start, file_path=file_path)
 
 if __name__ == "__main__" :
     start_calculation()
