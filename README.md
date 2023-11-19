@@ -1,4 +1,4 @@
-# Dayana-Dictionary-Builder
+# Geekups-Dictionary-Builder
 build all possible combinations of your given words. you can use different statistical options to build the perfect word list that you want.
 
 where you can use this tool?
